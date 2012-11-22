@@ -8,4 +8,8 @@ module ApplicationHelper
 			"#{base_title} | #{page_title}"
 		end
 	end
+
+	def request_env(parameter)
+  		request.env[parameter]
+	end
 end
